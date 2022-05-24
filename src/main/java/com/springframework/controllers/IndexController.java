@@ -1,4 +1,4 @@
-package com.springframework.spring5recipeapp.controllers;
+package com.springframework.controllers;
 
 import org.springframework.web.bind.annotation.RequestMapping;
 
