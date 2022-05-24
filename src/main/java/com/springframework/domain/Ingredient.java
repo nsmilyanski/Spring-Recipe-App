@@ -3,7 +3,7 @@ package com.springframework.domain;
 import javax.persistence.*;
 import java.math.BigDecimal;
 
-@Entity(name = "ingredient")
+@Entity
 public class Ingredient {
 
     @Id
