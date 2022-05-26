@@ -6,7 +6,7 @@ import javax.persistence.*;
 import java.util.HashSet;
 import java.util.Set;
 
-@EqualsAndHashCode(exclude = "ingredients")
+
 @Data
 @Entity
 public class Recipe {
