@@ -20,11 +20,11 @@ public class UnitOfMeasureRepositoryIT {
     UnitOfMeasureRepository unitOfMeasureRepository;
 
     @Before
-    public void setUp() throws Exception {
+    public void setUp()  {
     }
 
     @Test
-    public void findByDescription() throws Exception {
+    public void findByDescription() {
 
         Optional<UnitOfMeasure> teaspoon = unitOfMeasureRepository.findUnitOfMeasureByDescription("Teaspoon");
 
@@ -32,7 +32,7 @@ public class UnitOfMeasureRepositoryIT {
     }
 
     @Test
-    public void findByDescriptionCup() throws Exception {
+    public void findByDescriptionCup() {
 
         Optional<UnitOfMeasure> teaspoon = unitOfMeasureRepository.findUnitOfMeasureByDescription("Cup");
 
