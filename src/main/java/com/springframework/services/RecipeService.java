@@ -3,7 +3,7 @@ package com.springframework.services;
 import com.springframework.commands.RecipeCommand;
 import com.springframework.domain.Recipe;
 
-import java.util.Optional;
+
 import java.util.Set;
 
 public interface RecipeService {
@@ -14,4 +14,6 @@ public interface RecipeService {
     RecipeCommand saveRecipeCommand(RecipeCommand command);
 
     RecipeCommand findCommandById(Long valueOf);
+
+    void deleteById(Long valueOf);
 }
