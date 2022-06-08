@@ -2,6 +2,7 @@ package com.springframework.converts;
 
 import com.springframework.commands.CategoryCommand;
 import com.springframework.domain.Category;
+import lombok.Synchronized;
 import org.springframework.core.convert.converter.Converter;
 import org.springframework.lang.Nullable;
 import org.springframework.stereotype.Component;
@@ -9,7 +10,7 @@ import org.springframework.stereotype.Component;
 @Component
 public class CategoryToCategoryCommand implements Converter<Category, CategoryCommand> {
 
-
+    @Synchronized
     @Nullable
     @Override
     public CategoryCommand convert(Category source) {
@@ -21,6 +22,7 @@ public class CategoryToCategoryCommand implements Converter<Category, CategoryCo
 
         categoryCommand.setId(source.getId());
         categoryCommand.setDescription(source.getDescription());
+
         return categoryCommand;
     }
 }
