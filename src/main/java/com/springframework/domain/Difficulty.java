@@ -1,5 +1,5 @@
 package com.springframework.domain;
 
-public enum Diffuclty {
+public enum Difficulty {
     EASY, MODERATE, KIND_OF_HARD, HARD
 }

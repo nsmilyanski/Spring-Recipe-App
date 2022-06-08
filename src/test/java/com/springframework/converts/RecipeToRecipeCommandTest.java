@@ -13,7 +13,7 @@ public class RecipeToRecipeCommandTest {
     public static final Integer PREP_TIME = Integer.valueOf("7");
     public static final String DESCRIPTION = "My Recipe";
     public static final String DIRECTIONS = "Directions";
-    public static final Diffuclty DIFFICULTY = Diffuclty.EASY;
+    public static final Difficulty DIFFICULTY = Difficulty.EASY;
     public static final Integer SERVINGS = Integer.valueOf("3");
     public static final String SOURCE = "Source";
     public static final String URL = "Some URL";
@@ -49,7 +49,7 @@ public class RecipeToRecipeCommandTest {
         recipe.setCookTime(COOK_TIME);
         recipe.setPrepTime(PREP_TIME);
         recipe.setDescription(DESCRIPTION);
-        recipe.setDiffuclty(DIFFICULTY);
+        recipe.setDifficulty(DIFFICULTY);
         recipe.setDirections(DIRECTIONS);
         recipe.setServings(SERVINGS);
         recipe.setSource(SOURCE);
@@ -87,7 +87,7 @@ public class RecipeToRecipeCommandTest {
         assertEquals(COOK_TIME, command.getCookTime());
         assertEquals(PREP_TIME, command.getPrepTime());
         assertEquals(DESCRIPTION, command.getDescription());
-        assertEquals(DIFFICULTY, command.getDiffuclty());
+        assertEquals(DIFFICULTY, command.getDifficulty());
         assertEquals(DIRECTIONS, command.getDirections());
         assertEquals(SERVINGS, command.getServings());
         assertEquals(SOURCE, command.getSource());

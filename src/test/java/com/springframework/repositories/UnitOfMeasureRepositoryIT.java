@@ -26,7 +26,7 @@ public class UnitOfMeasureRepositoryIT {
     @Test
     public void findByDescription() {
 
-        Optional<UnitOfMeasure> teaspoon = unitOfMeasureRepository.findUnitOfMeasureByDescription("Teaspoon");
+        Optional<UnitOfMeasure> teaspoon = unitOfMeasureRepository.findByDescription("Teaspoon");
 
         assertEquals("Teaspoon", teaspoon.get().getDescription());
     }
@@ -34,7 +34,7 @@ public class UnitOfMeasureRepositoryIT {
     @Test
     public void findByDescriptionCup() {
 
-        Optional<UnitOfMeasure> teaspoon = unitOfMeasureRepository.findUnitOfMeasureByDescription("Cup");
+        Optional<UnitOfMeasure> teaspoon = unitOfMeasureRepository.findByDescription("Cup");
 
         assertEquals("Cup", teaspoon.get().getDescription());
     }

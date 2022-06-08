@@ -1,6 +1,6 @@
 package com.springframework.commands;
 
-import com.springframework.domain.Diffuclty;
+import com.springframework.domain.Difficulty;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -21,7 +21,7 @@ public class RecipeCommand {
     private String url;
     private String directions;
     private Set<IngredientCommand> ingredients = new HashSet<>();
-    private Diffuclty diffuclty;
+    private Difficulty difficulty;
     private NotesCommand notes;
     private Set<CategoryCommand> categories = new HashSet<>();
 }
