@@ -29,7 +29,7 @@ public class IngredientServiceImpl implements IngredientService {
 
         Optional<Recipe> recipeOptional = recipeRepository.findById(recipeId);
 
-        System.out.println();
+
 
         if (!recipeOptional.isPresent()){
             //todo impl error handling
@@ -48,5 +48,10 @@ public class IngredientServiceImpl implements IngredientService {
         }
 
         return ingredientCommandOptional.get();
+    }
+
+    @Override
+    public IngredientCommand saveIngredientCommand(IngredientCommand command) {
+        return null;
     }
 }
