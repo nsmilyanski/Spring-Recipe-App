@@ -1,10 +1,7 @@
 <!doctype html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta charset="UTF-8"/>
     <title>Image Upload Form</title>
 
     <!-- Latest compiled and minified CSS -->
@@ -20,7 +17,6 @@
             crossorigin="anonymous" th:src="@{/webjars/bootstrap/3.3.7-1/js/bootstrap.min.js}"></script>
 </head>
 <body>
-
 <!--/*@thymesVar id="recipe" type="com.springframework.domain.Recipe"*/-->
 <div class="container-fluid" style="margin-top: 20px">
     <div class="row">
@@ -33,27 +29,19 @@
                     <div class="panel-body">
                         <div class="row">
                             <div class="col-md-5">
-                                <form action="http:\\localhost" method="post" enctype="multipart/form-data"
-                                      th:action="@{'/recipe/' + ${recipe.getId()} + '/image'}">
-                                    <label class="control-label">Select file</label>
+                                <form  action="http:\\localhost" method="post" enctype="multipart/form-data"
+                                       th:action="@{'/recipe/' + ${recipe.getId()} + '/image'}">
+                                    <label class="control-label">Select File</label>
                                     <input id="imagefile" name="imagefile" type="file" class="file">
                                     <button type="submit" class="btn btn-primary">Submit</button>
                                 </form>
-
                             </div>
                         </div>
                     </div>
-
-
                 </div>
-
             </div>
-
         </div>
-
     </div>
-
 </div>
-
 </body>
 </html>
